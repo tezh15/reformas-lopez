@@ -12,11 +12,11 @@ function Pricing() {
     return (
         <IconContext.Provider value={{color: '#fff', size: 64}}>
         <div>
-            <div className="pricing__section">
+            <div className="pricing__section darkBg">
                 <div className="pricing__wrapper">
-                    <h1 className="pricing__heading">Servicios</h1>
+                    <h1 className="pricing__heading">Nuestros servicios</h1>
                     <div className="pricing__container">
-                        <Link to="/sign-up" className="pricing__container-card">
+                        <Link to="" className="pricing__container-card">
                             <div className="pricing__container-cardInfo">
                                 <div className="icon">
                                     <IoHardwareChip/>
@@ -36,7 +36,7 @@ function Pricing() {
                                 </Button>
                             </div>
                         </Link>
-                        <Link to="/sign-up" className="pricing__container-card">
+                        <Link to="/" className="pricing__container-card">
                             <div className="pricing__container-cardInfo">
                                 <div className="icon">
                                     <SiBmcsoftware/>
@@ -55,7 +55,7 @@ function Pricing() {
                                 </Button>
                             </div>
                         </Link>
-                        <Link to="/sign-up" className="pricing__container-card">
+                        <Link to="/" className="pricing__container-card">
                             <div className="pricing__container-cardInfo">
                                 <div className="icon">
                                     <GiAutoRepair/>

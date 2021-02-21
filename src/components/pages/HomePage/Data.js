@@ -5,7 +5,7 @@ export const homeObjOne = {
     topLine: 'Eterux',
     headline: 'Sobre nosotros',
     description:
-      'Eterux es una empresa que inicia en el año 2020, sus fundadores Alejandro Lemos, Danny Arboleda Rojas y Jose David Benitez Chavez deciden consolidar una empresa dedicada a impactar positivamente el mundo utilizando la tecnología como medio, en un año de crisis mundial debido a la necesidad de un cambio positivo para la humanidad.',
+      'Eterux es una StartUp de desarrollo tecnológico ubicada en Cali, colombia, su principal misión es impactar positivamente la vida de los seres humanos utilizando la tecnología como medio, Eterux nace...',
     buttonLabel: 'Conoce mas',
     imgStart: '',
     img: 'images/svg-1.svg',

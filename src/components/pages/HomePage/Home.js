@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSection from '../../HeroSection'
 import Pricing from '../../Pricing'
+import Contact from '../Contact/Contact'
 import {homeObjOne, homeObjTwo, homeObjThree, homeObjFour} from './Data'
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
         <>
             <HeroSection {...homeObjOne}/>
             <Pricing/>
+            <Contact/>
         </>
     )
 }

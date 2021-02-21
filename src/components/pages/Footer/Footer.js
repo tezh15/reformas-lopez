@@ -17,24 +17,21 @@ function Footer() {
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+            <h2>Sobre nosotros</h2>
+            <Link to='/about-us'>Sobre nosotros</Link>
+            <Link to='/'>Portafolio</Link>
+            <Link to='/'>Servicios</Link>
+            <Link to='/'>Términos y condiciones</Link>
           </div>
           <div className='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
+            <h2>Contáctanos</h2>
+            <Link to='/contact'>Contacto</Link>
+            <Link to='/contact'>Solicitudes</Link>
             <Link to='/'>Destinations</Link>
             <Link to='/'>Sponsorships</Link>
           </div>
-        </div>
-        <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>Social Media</h2>
+            <h2>Redes Sociales</h2>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>

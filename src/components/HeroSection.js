@@ -52,7 +52,7 @@ function HeroSection({
             </div>
             <div className='col' style={{ padding: 25, borderRadius: 5}}>
               <div className='home__hero-img-wrapper'>
-                <img style={{width:400, height:500, marginLeft: 50}} src="images/logo_1.png" alt=""/>
+                <img style={{width:300, height:400, marginLeft: 50}} src="images/logo_1.png" alt=""/>
               </div>
             </div>
           </div>

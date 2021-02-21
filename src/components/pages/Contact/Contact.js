@@ -9,11 +9,12 @@ function Contact() {
             <div className="mainSection">
                 <div className="container">
                     <div className="row">
+                        <h1 style={{ marginBottom: 20 }}>Contáctanos</h1>
                         <div className="col-lg-6">
                             <ContactUsSection />
                         </div>
                         <div className="col-lg-6">
-                            <ContactForm/>
+                            <ContactForm />
                         </div>
                     </div>
                 </div>
