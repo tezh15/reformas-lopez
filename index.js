@@ -37,7 +37,7 @@ app.post("/api/formContact", (req, res) => {
         });
 
         var mailOptions = {
-            from: 'Prototipark' + '<teameterux@gmail.com>', // sender address
+            from: 'Eterux' + '<teameterux@gmail.com>', // sender address
             to: "teameterux@gmail.com", // list of receivers 
             subject: "Solicitud de contacto ✔", // Subject line
             text: "Solicitud de contacto",
