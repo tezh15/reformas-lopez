@@ -1,0 +1,45 @@
+.notification-container {
+    font-size: 18px;
+    box-sizing: border-box;
+    position: fixed;
+    color: white;
+}
+.notification-image {
+    position: absolute;
+    bottom: 12px;
+}
+
+.notification-message {
+    margin-left: 50px;
+    font-size: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.top-right {
+    top: 12px;
+    right: 12px;
+    transition: transform .6s ease-in-out;
+    animation: toast-in-right .7s;
+}
+
+.bottom-right {
+    bottom: 12px;
+    right: 12px;
+    transition: transform .6s ease-in-out;
+    animation: toast-in-right .7s;
+}
+
+.top-left {
+    top: 12px;
+    left: 12px;
+    transition: transform .6s ease-in;
+    animation: toast-in-left .7s;
+}
+
+.bottom-left {
+    bottom: 12px;
+    left: 12px;
+    transition: transform .6s ease-in;
+    animation: toast-in-left .7s;
+}
