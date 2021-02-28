@@ -15,7 +15,6 @@ var firestore = firebase.firestore();
 // const db = firestore.collection("emails");
 
 let done = "¡Email sent!";
-let error = "¡error!";
 
 export async function sendEmailApi(data) {
   firestore.collection("emails").doc().set({

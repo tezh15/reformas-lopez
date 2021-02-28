@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/AboutUsSection.css';
-import { Link } from 'react-router-dom';
 
 function HeroSection({
   lightBg,

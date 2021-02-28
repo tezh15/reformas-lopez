@@ -1,7 +1,6 @@
-import React from 'react'
-import ContactUsSection from './components/ContactUsSection'
-import ContactForm from "./components/ContactForm"
-import { contactObjOne } from './components/Data'
+import React from 'react';
+import ContactUsSection from './components/ContactUsSection';
+import ContactForm from "./components/ContactForm";
 
 function Contact() {
     return (

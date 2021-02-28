@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from '../../Button';
 import { Link } from 'react-router-dom';
 import {
   FaFacebook,
@@ -9,7 +8,14 @@ import {
   FaTwitter,
   FaLinkedin
 } from 'react-icons/fa';
-import { MdFingerprint } from 'react-icons/md';
+
+const handlecurrentDate = () => {
+  let currentDate = new Date();
+  let year = currentDate.getFullYear();
+  return (
+    <small className='website-rights'>ETERUX © {year} </small>
+  )
+}
 
 function Footer() {
   return (
@@ -44,14 +50,14 @@ function Footer() {
           <div className='footer-logo'>
             <Link to='/' className="navbar-logo">
               <div className='firstLogo'>
-                <img src="images/logo_4.png" style={{ width: 50, height: 50, marginRight: 10 }} />
+                <img src="images/logo_4.png" alt="logo4" style={{ width: 50, height: 50, marginRight: 10 }} />
               </div>
               <div className='secondLogo'>
-                <img src="images/logo_5.png" style={{ width: 100, height: 50, display: "flex", justifyContent: "flex-start" }} />
+                <img src="images/logo_5.png" alt="logo5" style={{ width: 100, height: 50, display: "flex", justifyContent: "flex-start" }} />
               </div>
             </Link>
           </div>
-          <small className='website-rights'>ETERUX © 2020</small>
+          {handlecurrentDate()}
           <div className='social-icons'>
             <Link
               className='social-icon-link'
