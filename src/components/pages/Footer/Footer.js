@@ -13,7 +13,7 @@ const handlecurrentDate = () => {
   let currentDate = new Date();
   let year = currentDate.getFullYear();
   return (
-    <small className='website-rights'>ETERUX © {year} </small>
+    <small className='website-rights'>ETERUX © 2020 - {year} </small>
   )
 }
 
