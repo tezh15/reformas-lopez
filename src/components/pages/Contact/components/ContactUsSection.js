@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import '../css/ContactSection.css';
-import { Link } from 'react-router-dom';
 import Toast from '../../../toast/Toast';
 import { sendEmailApi } from '../services';
-import axios from 'axios';
 
 function ContactUsSection() {
   const [formData, setFormData] = useState({
@@ -42,27 +40,12 @@ function ContactUsSection() {
   async function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
-    // setConfigToast({ ...configToast, typeToast: "done", textToast: "Email sent" });
     const response = await sendEmailApi(formData);
-    if (typeof response !== 'undefined') {
-      if (response.data.done) {
-        setConfigToast({ ...configToast, typeToast: "done", textToast: response.data.done });
-        setIsLoading(false);
-      }
-      if (response.data.info) {
-        setConfigToast({ ...configToast, typeToast: "info", textToast: response.data.info });
-        setIsLoading(false);
-      }
-      if (response.data.error) {
-        setConfigToast({ ...configToast, typeToast: "error", textToast: response.data.error });
-        setIsLoading(false);
-      }
-    } else {
-      console.log("problema en la peticion");
-      setConfigToast({ ...configToast, typeToast: "error", textToast: "Server Off" });
+    setTimeout(() => {
+      setConfigToast({ ...configToast, typeToast: "done", textToast: "Email sent" });
       setIsLoading(false);
-      return
-    }
+      setFormData({ ...formData, name: '', email: '', comments: '' });
+    }, 2000);
   }
 
   return (

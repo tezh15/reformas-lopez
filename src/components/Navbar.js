@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { MdFingerprint } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Button } from './Button';
 import './Navbar.css';
-import { IconContext } from 'react-icons/lib'
+import { IconContext } from 'react-icons/lib';
 
 
 function Navbar() {
@@ -38,10 +36,10 @@ function Navbar() {
                     <div className="navbar-container container">
                         <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
                             <div className='firstLogo'>
-                                <img src="images/logo_4.png" style={{ width: 50, height: 50, marginRight: 10 }} />
+                                <img src="images/logo_4.png" alt="logo4" style={{ width: 50, height: 50, marginRight: 10 }} />
                             </div>
                             <div className='secondLogo'>
-                                <img src="images/logo_5.png" style={{ width: 100, height: 50, display: "flex", justifyContent: "flex-start"}} />
+                                <img src="images/logo_5.png" alt="logo5" style={{ width: 100, height: 50, display: "flex", justifyContent: "flex-start"}} />
                             </div>
                         </Link>
                         <div className="menu-icon" onClick={handleClick}>
