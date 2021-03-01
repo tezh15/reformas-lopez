@@ -20,16 +20,17 @@ function HeroSection({
       <div
         className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}
       >
-        <div className='container'>
+        <div className='container' style={{justifyContent: "space-around"}}>
           <div
             className='row home__hero-row'
             style={{
               display: 'flex',
+              justifyContent: "space-around",
               flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'
             }}
           >
-            <div className='col'>
-              <div className='home__hero-text-wrapper'>
+            <div className='col' >
+              <div className='home__hero-text-wrapper' style={{marginRight: 10}}>
                 <div className='top-line'>{topLine}</div>
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
@@ -51,8 +52,8 @@ function HeroSection({
               </div>
             </div>
             <div className='col' style={{ padding: 25, borderRadius: 5}}>
-              <div className='home__hero-img-wrapper'>
-                <img style={{width:300, height:400, marginLeft: 50}} src="images/logo_1.png" alt=""/>
+              <div className='home__hero-img-wrapper' style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+                <img style={{width:300, height:400}} src="images/logo_1.png" alt=""/>
               </div>
             </div>
           </div>
