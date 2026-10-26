@@ -9,6 +9,7 @@ import { IconContext } from 'react-icons/lib';
 function Navbar() {
 
     const [click, setClick] = useState(false);
+    // eslint-disable-next-line no-unused-vars
     const [button, setButton] = useState(true);
 
 
