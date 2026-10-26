@@ -94,10 +94,14 @@ img {
 
 .contactForm.info-panel {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr 1fr;
   align-content: start;
   gap: 16px;
   width: 100%;
+
+  @media screen and (max-width: bp.$desktop) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .contactForm .eyebrow,
@@ -299,8 +303,19 @@ img {
     gap: 4px;
   }
 
-  .contactForm {
+  .contactForm.info-panel {
     grid-template-columns: 1fr;
+  }
+
+  .contactFormField {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .contactFormField .form-control {
+    display: block;
+    width: 100%;
+    max-width: none;
   }
 
   .contactForm .eyebrow,
