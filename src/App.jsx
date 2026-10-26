@@ -5,7 +5,7 @@ import Navbar from './components/navbar';
 import PreHeader from './components/pre-header';
 import Footer from './components/footer';
 import Home from './pages/home-page/home-page';
-import Contact from './pages/contact';
+import Contact from './pages/contact-us';
 import AboutUs from './pages/about-us';
 import Services from './pages/services';
 

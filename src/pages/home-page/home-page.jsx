@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from '../../components/hero-section';
 import FeaturedWorks from '../../components/featured-works';
 import WorkProcess from '../../components/work-process';
-import Contact from '../contact';
+import Contact from '../contact-us';
 import { homeObjOne } from './Data';
 
 function Home() {

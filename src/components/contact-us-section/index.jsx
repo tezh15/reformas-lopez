@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.scss';
 import Toast from '../toast';
-import { getWhatsAppLink } from '../../pages/contact/services'; 
+import { getWhatsAppLink } from '../../pages/contact-us/services'; 
 
 function ContactUsSection() {
   const [formData, setFormData] = useState({
