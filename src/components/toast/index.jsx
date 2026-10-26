@@ -70,7 +70,7 @@ const Toast = (props) => {
 
     useEffect(() => {
         setToastList();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps  
     }, [typeToast]);
 
     return (
