@@ -1,0 +1,40 @@
+@use '../../styles/breakpoints' as bp;
+
+.services-page {
+  padding: 56px 0 96px;
+}
+
+.services-page__header {
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.services-page__header h1 {
+  margin-bottom: 12px;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.services-page__header p {
+  color: var(--color-gris);
+  line-height: 1.7;
+}
+
+.services-page__item {
+  padding: 40px 0;
+  border-top: 1px solid var(--color-marfil);
+  scroll-margin-top: 100px;
+}
+
+@media screen and (max-width: bp.$tablet) {
+  .services-page {
+    padding: 40px 0 64px;
+  }
+
+  .services-page__item {
+    padding: 32px 0;
+  }
+
+  .services-page__header {
+    margin-bottom: 32px;
+  }
+}

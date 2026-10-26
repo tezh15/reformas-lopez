@@ -1,0 +1,35 @@
+@use '../../styles/breakpoints' as bp;
+
+.preheader {
+  background: var(--color-marfil);
+  color: var(--color-carbon);
+  font-size: 0.875rem;
+}
+
+.preheader-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0.65rem 50px;
+}
+
+.preheader-item {
+  align-items: center;
+  color: inherit;
+  display: inline-flex;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.preheader-item svg {
+  flex: 0 0 auto;
+}
+
+@media screen and (max-width: bp.$mobile) {
+  .preheader {
+    display: none;
+  }
+}

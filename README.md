@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Reformas López
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Web de Reformas López, creada con React. Presenta los servicios de reforma, una selección de proyectos, el proceso de trabajo de la empresa y vías de contacto.
 
-## Available Scripts
+## Requisitos
 
-In the project directory, you can run:
+- Node.js y npm.
 
-### `yarn start`
+## Instalación y desarrollo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Desde la carpeta del proyecto, instala las dependencias y arranca el servidor de desarrollo:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install
+npm start
+```
 
-### `yarn test`
+La web estará disponible en [http://localhost:3000](http://localhost:3000). El servidor recarga los cambios al guardar los archivos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Scripts disponibles
 
-### `yarn build`
+| Comando | Descripción |
+| --- | --- |
+| `npm start` | Inicia el servidor de desarrollo. |
+| `npm test` | Ejecuta las pruebas de Create React App en modo interactivo. |
+| `npm run build` | Genera la versión optimizada para producción en `build/`. |
+| `npm run eject` | Expone la configuración interna de Create React App. Es una operación irreversible. |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Secciones de la web
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Inicio (`/`)**: hero, proyectos destacados, resumen de cómo trabajamos y formulario de contacto.
+- **Servicios (`/servicios`)**: reformas de cocina, suelos, baños, puertas y otros trabajos. Cada servicio presenta proyectos con carrusel de imágenes.
+- **Nosotros (`/nosotros`)**: información de la empresa, proceso de trabajo y motivos para elegirla.
+- **Contacto (`/contacto`)**: información y formulario para consultas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Estructura del proyecto
 
-### `yarn eject`
+```text
+src/
+├── components/       # Componentes reutilizables y sus estilos SCSS
+├── pages/            # Páginas y datos de cada sección
+├── styles/           # Variables y breakpoints compartidos
+├── App.jsx           # Rutas y estructura general
+└── index.jsx         # Punto de entrada de React
+public/
+└── assets/           # Imágenes y recursos estáticos
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Los datos de los servicios y sus galerías están en `src/pages/services/Data.js`. Las imágenes de reformas se organizan en `public/assets/assets/reformas/<servicio>/<proyecto>/` y se nombran en orden, por ejemplo `image1.jpeg`, `image2.jpeg`. Algunos suelos usan imágenes `.webp`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Los proyectos destacados de la página de inicio se configuran en `src/components/featured-works/index.jsx`. Al añadir o cambiar imágenes, comprueba que las rutas coincidan con los nombres y extensiones reales de los archivos en `public/`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+El proceso de trabajo mostrado en la página de inicio reutiliza los datos de `src/pages/about-us/Data.js`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Tecnologías principales
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React 17 y React Router 5
+- Create React App (`react-scripts`)
+- Sass/SCSS
+- React Icons

@@ -1,0 +1,128 @@
+@use '../../styles/breakpoints' as bp;
+
+.site-footer {
+  padding: 56px 24px 20px;
+  background: var(--color-gris);
+  color: var(--color-blanco);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.site-footer .brand-footer {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.brand-footer img {
+  display: block;
+  width: auto;
+  max-width: 220px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.site-footer .footer-copy,
+.site-footer .footer-links,
+.site-footer .footer-bottom p,
+.site-footer h2,
+.site-footer a,
+.site-footer span {
+  color: var(--color-blanco);
+}
+
+.footer-copy {
+  max-width: 420px;
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.82;
+}
+
+.site-footer h2 {
+  margin: 8px 0 18px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.footer-links {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li,
+.footer-links a,
+.footer-links span {
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.footer-links a {
+  text-decoration: none;
+  opacity: 0.82;
+  transition: opacity 160ms ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-links span {
+  opacity: 0.82;
+}
+
+.footer-bottom {
+  width: min(1200px, 100%);
+  margin: 40px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid rgb(255 255 255 / 20%);
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0.75;
+}
+
+@media screen and (max-width: bp.$desktop) {
+  .footer-grid {
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: bp.$tablet) {
+  .site-footer {
+    padding: 40px 20px 18px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 24px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (max-width: bp.$mobile) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+}

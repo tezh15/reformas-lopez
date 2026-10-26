@@ -1,0 +1,86 @@
+@use '../../styles/breakpoints' as bp;
+
+.work-process {
+  padding: 80px 0;
+  background: var(--color-marfil);
+}
+
+.work-process__header {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.work-process__eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-gris);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.work-process__header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.25;
+}
+
+.work-process__steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.work-process__step {
+  padding: 24px;
+  border-top: 2px solid var(--color-piedra);
+  background: var(--color-blanco);
+  border-radius: 0 0 8px 8px;
+}
+
+.work-process__number {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--color-gris);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.work-process__step h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.work-process__step p {
+  color: var(--color-gris);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: bp.$desktop) {
+  .work-process__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: bp.$tablet) {
+  .work-process {
+    padding: 56px 0;
+  }
+
+  .work-process__steps {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: bp.$mobile) {
+  .work-process__steps {
+    grid-template-columns: 1fr;
+  }
+}

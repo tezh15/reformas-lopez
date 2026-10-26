@@ -1,0 +1,28 @@
+.productSection {
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.productSection {
+    color: var(--color-carbon);
+    line-height: 2.4rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.productTitle {
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    font-family: var(--font-montserrat);
+}
+.productImg {
+    width: 250px;
+    height: 250px;
+    padding: 25px;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

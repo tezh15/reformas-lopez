@@ -1,0 +1,35 @@
+@use './styles/breakpoints' as bp;
+
+:root {
+  --color-carbon: #171719;
+  --color-blanco: #FFFFFF;
+  --color-marfil: #EFE6D8;
+  --color-gris: #777873;
+  --color-piedra: #B7A48B;
+  --color-verde: #4CAF50;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --breakpoint-mobile: #{bp.$mobile};
+  --breakpoint-tablet: #{bp.$tablet};
+  --breakpoint-desktop: #{bp.$desktop};
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-montserrat);
+  color: var(--color-carbon);
+}
+
+body {
+  background-color: var(--color-blanco);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montserrat);
+}

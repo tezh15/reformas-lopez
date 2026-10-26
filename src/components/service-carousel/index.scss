@@ -1,0 +1,180 @@
+@use '../../styles/breakpoints' as bp;
+
+.service-carousel {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr);
+  grid-template-areas: 'description gallery';
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  min-width: 0;
+}
+
+.services-page__item--reversed .service-carousel {
+  grid-template-areas: 'gallery description';
+}
+
+.service-carousel__description {
+  grid-area: description;
+}
+
+.service-carousel__description h2 {
+  margin-bottom: 16px;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.service-carousel__description p {
+  color: var(--color-gris);
+  line-height: 1.8;
+}
+
+.service-carousel__gallery {
+  grid-area: gallery;
+  min-width: 0;
+}
+
+.service-carousel__image-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 390px;
+  background: var(--color-marfil);
+  border-radius: 8px;
+}
+
+.service-carousel__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-carousel__step {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  padding: 8px 12px;
+  color: var(--color-blanco);
+  background: rgba(23, 23, 25, 0.72);
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.service-carousel__controls,
+.service-carousel__projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.service-carousel__controls {
+  margin-top: 16px;
+}
+
+.service-carousel__projects {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.service-carousel__arrow {
+  svg {
+    path {
+      fill: var(--color-blanco);
+    }
+  }
+}
+
+.service-carousel__arrow,
+.service-carousel__project {
+  padding: 9px 14px;
+  color: var(--color-carbon);
+  background: var(--color-piedra);
+  border: 1px solid var(--color-piedra);
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.service-carousel__arrow:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.service-carousel__dots {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.service-carousel__dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  background: var(--color-piedra);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.service-carousel__dot.is-active {
+  background: var(--color-carbon);
+  transform: scale(1.2);
+}
+
+.service-carousel__project.is-active {
+  color: var(--color-blanco);
+  background: var(--color-carbon);
+}
+
+.service-carousel button:focus-visible {
+  outline: 3px solid var(--color-verde);
+  outline-offset: 3px;
+}
+
+@media screen and (max-width: bp.$tablet) {
+
+  .service-carousel,
+  .services-page__item--reversed .service-carousel {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'description'
+      'gallery';
+    gap: 24px;
+  }
+
+  .service-carousel__image-wrap {
+    height: 300px;
+  }
+
+  .service-carousel__controls,
+  .service-carousel__projects {
+    gap: 10px;
+  }
+
+  .service-carousel__arrow,
+  .service-carousel__project {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .service-carousel__projects {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: bp.$mobile) {
+  .service-carousel__image-wrap {
+    height: 240px;
+  }
+
+  .service-carousel__controls {
+    gap: 8px;
+  }
+
+  .service-carousel__arrow {
+    padding: 8px;
+  }
+}
