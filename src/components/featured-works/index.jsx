@@ -24,7 +24,7 @@ const featuredWorks = [
         link: '/servicios#banos',
     },
     {
-        title: 'Puertas y carpintería',
+        title: 'Suelos, puertas y ventanas renovadas',
         project: 'Una base impecable para tu hogar.',
         images: Array.from({ length: 4 }, (_, index) => (
             publicUrl(`/assets/assets/reformas/puertas/3/image${index + 1}.jpeg`)
