@@ -1,7 +1,9 @@
+import publicUrl from '../../utils/public-url';
+
 const createProject = (service, project, imageCount, extension = 'jpeg') => ({
     name: `Proyecto ${project}`,
     images: Array.from({ length: imageCount }, (_, index) => (
-        `/assets/assets/reformas/${service}/${project}/image${index + 1}.${extension}`
+        publicUrl(`/assets/assets/reformas/${service}/${project}/image${index + 1}.${extension}`)
     )),
 });
 

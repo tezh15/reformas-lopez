@@ -26,6 +26,17 @@ La web estará disponible en [http://localhost:3000](http://localhost:3000). El 
 | `npm run build` | Genera la versión optimizada para producción en `build/`. |
 | `npm run eject` | Expone la configuración interna de Create React App. Es una operación irreversible. |
 
+## Publicación en GitHub Pages
+
+El repositorio incluye un workflow de GitHub Actions que construye y publica la web al hacer push a la rama `master` o al ejecutarlo manualmente.
+
+1. Sube el proyecto al repositorio de GitHub.
+2. En GitHub, abre **Settings → Pages** y selecciona **GitHub Actions** como origen de despliegue.
+3. En la pestaña **Actions**, espera a que termine correctamente el workflow **Deploy to GitHub Pages**.
+4. La web se publicará en [https://tezh15.github.io/reformas-lopez/](https://tezh15.github.io/reformas-lopez/).
+
+El workflow configura automáticamente la ruta base del repositorio para los recursos estáticos y genera una página de respaldo para permitir recargas en las rutas internas. No subas credenciales ni secretos al repositorio; los archivos `.env` están excluidos por `.gitignore`.
+
 ## Secciones de la web
 
 - **Inicio (`/`)**: hero, proyectos destacados, resumen de cómo trabajamos y formulario de contacto.

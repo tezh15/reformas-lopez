@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
+import publicUrl from '../../utils/public-url';
 import './index.scss';
 
 const featuredWorks = [
@@ -8,7 +9,7 @@ const featuredWorks = [
         title: 'Cocinas transformadas',
         project: 'De espacios anticuados a cocinas funcionales y modernas.',
         images: Array.from({ length: 4 }, (_, index) => (
-            `/assets/assets/reformas/cocina/3/image${index + 1}.jpeg`
+            publicUrl(`/assets/assets/reformas/cocina/3/image${index + 1}.jpeg`)
         )),
         alt: 'Cocina reformada, proyecto destacado 3',
         link: '/servicios#cocina',
@@ -17,7 +18,7 @@ const featuredWorks = [
         title: 'Baños que mejoran tu hogar',
         project: 'Transformando espacios con estilo y funcionalidad.',
         images: Array.from({ length: 4 }, (_, index) => (
-            `/assets/assets/reformas/baños/3/image${index + 1}.jpeg`
+            publicUrl(`/assets/assets/reformas/baños/3/image${index + 1}.jpeg`)
         )),
         alt: 'Baño reformado, proyecto destacado 3',
         link: '/servicios#banos',
@@ -26,7 +27,7 @@ const featuredWorks = [
         title: 'Puertas y carpintería',
         project: 'Una base impecable para tu hogar.',
         images: Array.from({ length: 4 }, (_, index) => (
-            `/assets/assets/reformas/puertas/3/image${index + 1}.jpeg`
+            publicUrl(`/assets/assets/reformas/puertas/3/image${index + 1}.jpeg`)
         )),
         alt: 'Trabajo de puertas y carpintería, proyecto destacado 3',
         link: '/servicios#puertas',

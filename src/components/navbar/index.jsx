@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes, FaWhatsapp } from 'react-icons/fa';
+import publicUrl from '../../utils/public-url';
 import './index.scss';
 import { IconContext } from 'react-icons/lib';
 
@@ -36,7 +37,7 @@ function Navbar() {
                     <div className="navbar-container container">
                         <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
                             <div className='firstLogo'>
-                                <img src="assets/logo/logo-wbg.webp" alt="logo4" style={{ height: 60, marginRight: 10 }} />
+                                <img src={publicUrl('/assets/logo/logo-wbg.webp')} alt="logo4" style={{ height: 60, marginRight: 10 }} />
                             </div>
                         </Link>
                         <div className="menu-icon" onClick={handleClick}>

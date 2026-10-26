@@ -1,4 +1,5 @@
 import React from 'react';
+import publicUrl from '../../utils/public-url';
 import { Link } from 'react-router-dom';
 import './index.scss';
 
@@ -14,7 +15,7 @@ function Footer() {
       <div className="footer-grid">
         <div className="footer-brand">
           <Link to="/" className="brand-footer" aria-label="Reformas Lopez, inicio">
-            <img src="assets/logo/logo-wbg.webp" alt="Reformas Lopez" />
+            <img src={publicUrl('/assets/logo/logo-wbg.webp')} alt="Reformas Lopez" />
           </Link>
           <p className="footer-copy">
             Reformas integrales y renovación de viviendas en toda la Garrotxa,

@@ -2,6 +2,7 @@ import React from 'react';
 import './index.scss';
 import { Button } from '../button';
 import { Link } from 'react-router-dom';
+import publicUrl from '../../utils/public-url';
 
 function HeroSection({
   lightBg,
@@ -53,7 +54,7 @@ function HeroSection({
             </div>
             <div className='col' style={{ padding: 25, borderRadius: 5}}>
               <div className='home__hero-img-wrapper' style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
-                <img src="assets/logo/logo-wbg.webp" alt="logo"/>
+                <img src={publicUrl('/assets/logo/logo-wbg.webp')} alt="logo"/>
               </div>
             </div>
           </div>
