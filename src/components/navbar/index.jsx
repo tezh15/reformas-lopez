@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes, FaWhatsapp } from 'react-icons/fa';
 import publicUrl from '../../utils/public-url';
+import { getWhatsAppQuickLink } from '../../pages/contact-us/services';
 import './index.scss';
 import { IconContext } from 'react-icons/lib';
 
@@ -15,6 +16,10 @@ function Navbar() {
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+    const handleWhatsAppClick = () => {
+        window.open(getWhatsAppQuickLink(), '_blank', 'noopener,noreferrer');
+        closeMobileMenu();
+    };
 
     const showButton = () => {
         if (window.innerWidth <= 960) {
@@ -66,12 +71,14 @@ function Navbar() {
                         </Link>
                             </li>
                             <button
-                                className="btn btn-primary whatsapp"
+                                className="btn btn-primary fast-button"
                                 type="button"
                                 aria-label="WhatsApp"
                                 title="WhatsApp"
+                                onClick={handleWhatsAppClick}
                             >
-                                <FaWhatsapp aria-hidden="true" />
+                                {/* <FaWhatsapp aria-hidden="true" /> */}
+                                Presupuesto en 24 horas
                             </button>
                         </ul>
                     </div>

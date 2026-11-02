@@ -57,11 +57,18 @@
 
 }
 
-.btn.whatsapp {
-  background-color: var(--color-verde);
+.btn.fast-button {
+  background-color: var(--color-piedra);
   border-color: var(--color-blanco);
   border-radius: 10px;
-  border: 1px solid var(--color-verde);
+  border: 1px solid var(--color-piedra);
+
+  &:hover {
+    background-color: var(--color-gris);
+    border-color: var(--color-blanco);
+    border-radius: 10px;
+    border: 1px solid var(--color-gris);
+  }
 
   svg {
     fill: var(--color-blanco);
@@ -89,9 +96,11 @@
 .menu-icon {
   display: none;
 }
-.firstLogo{
+
+.firstLogo {
   padding-bottom: 30px;
 }
+
 .secondLogo {
   display: flex;
   justify-content: flex-start;

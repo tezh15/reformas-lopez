@@ -81,6 +81,9 @@ function ServiceCarousel({ service }) {
                         src={project.images[imageIndex]}
                         alt={`${service.title}, ${project.name.toLowerCase()}, paso ${imageIndex + 1}`}
                     />
+                    <span className="service-carousel__location">
+                        {project.location}
+                    </span>
                     <span className="service-carousel__step">
                         Paso {imageIndex + 1} de {imageCount}
                     </span>

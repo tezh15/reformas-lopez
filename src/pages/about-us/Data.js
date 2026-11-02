@@ -11,23 +11,28 @@ export const aboutUsObjOne = {
       steps: [
         {
           number: '01',
-          title: 'Escuchamos tu idea',
-          description: 'Nos explicas qué quieres renovar, qué necesitas y cómo te gustaría que quedara.'
+          title: 'visita gatruita',
+          description: 'Venimos a Olot / Basalú, en 48h. Tomamos medidas, fotos y nos explicas qué quieres renovar, qué necesitas y cómo te gustaría que quedara.'
         },
         {
           number: '02',
-          title: 'Valoramos el proyecto',
+          title: 'Presupuesto cerrado en 24h',
           description: 'Analizamos el espacio, los trabajos necesarios y las opciones más adecuadas para tu vivienda.'
         },
         {
           number: '03',
-          title: 'Ejecutamos con precisión',
-          description: 'Llevamos a cabo los trabajos cuidando los detalles, la coordinación y la calidad de cada fase.'
+          title: 'Diseño 3D',
+          description: 'Desarrollamos un render y un plano de instalaciones para decidir sin dudas.'
         },
         {
           number: '04',
-          title: 'Cuidamos el resultado final',
-          description: 'Revisamos las terminaciones y los remates para entregar un trabajo acorde con lo acordado.'
+          title: 'Obra con coordinador único',
+          description: 'Un único interlocutor designado para coordinar todos los aspectos del proyecto y WhatsApp diario con fotos para garantizar su correcta ejecución.'
+        },
+        {
+          number: '05',
+          title: 'Entrega y limpieza del resultado final',
+          description: 'Entregamos la obra con una limpieza pro y una revision a los 6 meses para garantizar que todo funciona correctamente y que estás satisfecho con el resultado.'
         }
       ]
     },

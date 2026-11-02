@@ -60,6 +60,21 @@
   font-size: 0.85rem;
 }
 
+.service-carousel__location {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  max-width: calc(100% - 150px);
+  overflow: hidden;
+  padding: 8px 12px;
+  color: var(--color-blanco);
+  background: rgba(23, 23, 25, 0.72);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .service-carousel__controls,
 .service-carousel__projects {
   display: flex;

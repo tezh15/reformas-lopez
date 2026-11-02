@@ -3,7 +3,7 @@ const CONTACT_NAME = process.env.REACT_APP_CONTACT_NAME || 'Reformas Lopez';
 
 export function getWhatsAppLink(data) {
   const message = [
-    `Hola ${CONTACT_NAME}, me gustaria realizar una reforma.`,
+    `Hola ${CONTACT_NAME} !, me gustaria realizar una reforma.`,
     '',
     `Nombre: ${data.name}`,
     `Email: ${data.email}`,
@@ -11,6 +11,12 @@ export function getWhatsAppLink(data) {
     `Comentarios: ${data.comments}`
   ].join('\n');
 
+  const encodedMessage = encodeURIComponent(message);
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+}
+
+export function getWhatsAppQuickLink() {
+  const message = 'Hola! Quiero presupuesto en 24h para mi reforma.';
   const encodedMessage = encodeURIComponent(message);
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
 }
