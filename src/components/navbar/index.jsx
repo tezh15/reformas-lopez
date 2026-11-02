@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaWhatsapp } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import publicUrl from '../../utils/public-url';
 import { getWhatsAppQuickLink } from '../../pages/contact-us/services';
 import './index.scss';
@@ -77,7 +77,6 @@ function Navbar() {
                                 title="WhatsApp"
                                 onClick={handleWhatsAppClick}
                             >
-                                {/* <FaWhatsapp aria-hidden="true" /> */}
                                 Presupuesto en 24 horas
                             </button>
                         </ul>
