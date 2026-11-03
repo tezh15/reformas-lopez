@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './index.scss';
 
 function Footer() {
+
   const mobile = process.env.REACT_APP_CONTACT_MOBILE;
   const phoneLink = mobile.replace(/[^\d+]/g, '');
   const email = process.env.REACT_APP_CONTACT_EMAIL;
